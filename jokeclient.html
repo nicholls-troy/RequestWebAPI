@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        label {
+            display: inline-block;
+            padding-left: 20px;
+        }
+
+        button {
+            margin: 10px;
+            display:block;
+            margin:auto;
+        }
+
+        #reqMethod,
+        #divSetup,
+        #divPunchline {
+            background-color: blanchedalmond;
+            width:50%;
+            padding: 10px;
+            border:thick solid black;
+            margin-top: 25px;
+            margin:auto;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="reqMethod">
+        <h1>Request Method</h1>
+        <label for="sync">Sync</label>
+        <input type="radio" name="sync" id="sync" checked>
+
+        <label for="async">Async</label>
+        <input type="radio" name="sync" id="async">
+
+        <label for="fetch">Fetch</label>
+        <input type="radio" name="sync" id="fetch">
+    </div>
+    <button onclick="requestJoke()" id="btnReq"> Request Joke </button>
+    <div id="divSetup">
+        <h1 id="setup"></h1>
+    </div>
+    <div id="divPunchline">
+        <h1 id="punchline"></h1>
+    </div>
+
+    <script src="jokescript.js">
+    </script>
+</body>
+
+</html>
